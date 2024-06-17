@@ -37,7 +37,7 @@ It's the conclusion of **7th chapter** (there's **20**) of [devmentor.pl](https:
 
 ## :mortar_board: Acquired skills:
 
-:white_check_mark: Separation of Concerns (SOC): Implemented smaller functions to perform specific tasks, enhancing code maintainability and readability.<br>
+:white_check_mark: Single Responsibility Principle: Implemented smaller functions to perform specific tasks, enhancing code maintainability and readability.<br>
 :white_check_mark: File Handling: Used the 'FileReader' object for processing of file data.<br>
 :white_check_mark: Regular Expressions: Employed regular expressions (Regex) for data validation.<br>
 :white_check_mark: CSV Parsing: Found pattern to divide parts of data from the .csv file.<br>
