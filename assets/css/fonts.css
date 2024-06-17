@@ -1,0 +1,68 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(./assets-fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+* {
+  font-family: Montserrat;
+  color: white;
+}
+
+.excursions__field-input,
+.order__field-input {
+  color: black;
+}
+
+.excursions__field-input--submit,
+.order__field-submit {
+  color: white;
+}
+
+.excursions__item,
+.panel__form,
+.excursions__field-input--submit,
+.order__field-submit,
+.excursions__field-input,
+.order__field-input {
+  font-size: 18px
+}
+
+.excursions__title,
+.order__total-price {
+  font-size: 32px;
+}
+
+.summary__title {
+  font-size: 24px;
+}
+.summary__prices,
+.order__field-name,
+.order__field-submit {
+  font-size: 20px;
+}
+
+@media (max-width: 700px) {
+  .excursions__item,
+    .panel__form,
+    .excursions__field-input--submit,
+    .order__field-submit,
+    .excursions__field-input,
+    .order__field-input {
+      font-size: 14px
+    }
+  
+    .excursions__title,
+    .order__total-price {
+      font-size: 26px;
+    }
+  
+    .summary__title {
+      font-size: 18px;
+    }
+  
+    .summary__prices,
+    .order__field-name,
+    .order__field-submit {
+      font-size: 16px;
+    }
+}

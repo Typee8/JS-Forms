@@ -1,0 +1,66 @@
+input {
+  border-style: none;
+}
+
+body {
+  background-image: url(./assets-img/bg.jpg);
+  background-repeat: no-repeat;
+  background-color: #182C1B;
+  background-size: cover;
+}
+
+.excursions__item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: rgb(89, 126, 82, 0.85);
+}
+
+.excursions__field-error,
+.order__field-error {
+  color: red;
+}
+
+.summary__btn-remove {
+  content: url(./assets-img/delete-cross.png);
+  width: 30px;
+  height: 30px;
+}
+
+.summary__title {
+  display: flex;
+  align-items: end;
+}
+
+.basket-btn-wrapper {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #C6A969;
+  transition: 0.3s ease-in-out;
+}
+
+.basket-btn-wrapper--active {
+  background-color: rgb(200, 179, 42);
+  transition: 0.3s ease-in-out;
+}
+
+.basket-btn {
+  content: url(./assets-img/basket.png);
+}
+
+/* HIDDEN ELEMENTS*/
+
+.excursions__item--prototype,
+.summary__item--prototype {
+  display: none;
+}
+
+.panel__container {
+  display: none;
+}
+
+.panel__container--active {
+  display: flex;
+}
+
+/* END - HIDDEN ELEMENTS */

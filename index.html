@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Take a trip!</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/desktop.css" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+  </head>
+  <body>
+    <section class="panel">
+      <ul class="panel__excursions excursions">
+        <li class="excursions__item excursions__item--prototype">
+          <header class="excursions__header">
+            <h2 class="excursions__title">Ogrodzieniec</h2>
+            <p class="excursions__description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
+              aliquam quam laboriosam quaerat temporibus dicta vitae maxime!
+              Nemo, nobis veritatis?
+            </p>
+          </header>
+          <form class="excursions__form">
+            <div class="excursions__field">
+              <label class="excursions__field-name">
+                Adult: <span class="excursions__price">99</span>PLN x
+                <input
+                  class="excursions__field-input"
+                  name="adults"
+                  type="number"
+                  min="1"
+                  max="100"
+                />
+                <div class="excursions__field-error" name="adults"></div>
+              </label>
+            </div>
+            <div class="excursions__field">
+              <label class="excursions__field-name">
+                Child: <span class="excursions__price">50</span>PLN x
+                <input
+                  class="excursions__field-input"
+                  name="children"
+                  type="number"
+                  min="1"
+                  max="100"
+                />
+                <div class="excursions__field-error" name="children"></div>
+              </label>
+            </div>
+            <div class="excursions__field excursions__field--submit">
+              <input
+                class="excursions__field-input excursions__field-input--submit"
+                value="Add to basket"
+                type="submit"
+              />
+            </div>
+          </form>
+        </li>
+      </ul>
+      <section class="panel__form">
+        <div class="panel__uploader uploader">
+          <label class="uploader__label">
+            Choose a file to load trips:<br>
+            <input class="uploader__input" type="file" accept=".csv" />
+          </label>
+        </div>
+        <div class="basket-btn-wrapper">
+          <div class="basket-btn"></div>
+        </div>
+        <div class="panel__container">
+          <form class="panel__order order" novalidate>
+            <div class="order__total-price">
+              Total:
+              <span class="order__total-price-value">0 PLN</span>
+            </div>
+            <div class="order__field">
+              <label class="order__field-name">
+                First name and last name:
+                <input class="order__field-input" name="name" />
+              </label>
+              <div class="order__field-error"></div>
+            </div>
+            <div class="order__field">
+              <label class="order__field-name">
+                Email: <input class="order__field-input" name="email" />
+              </label>
+              <div class="order__field-error"></div>
+            </div>
+            <div class="order__field order__field--submit">
+              <input
+                class="order__field-input order__field-submit"
+                value="Order"
+                type="submit"
+              />
+            </div>
+          </form>
+          <ul class="panel__summary summary">
+            <li class="summary__item summary__item--prototype">
+              <h3 class="summary__title">
+                <span class="summary__name">Ogrodzieniec</span>
+                <strong class="summary__total-price">199PLN</strong>
+                <a href="" class="summary__btn-remove" title="remove"></a>
+              </h3>
+              <p class="summary__prices">
+                adults: 1 x 99PLN, children: 2 x 50PLN
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/styles.js"></script>
+  </body>
+</html>
